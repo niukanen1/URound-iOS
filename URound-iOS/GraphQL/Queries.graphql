@@ -1,0 +1,71 @@
+query GetAllUsers {
+  getAllUsers {
+    _id
+    username
+    email
+    firstName
+    lastName
+    hashedPassword
+    profileImage
+  }
+}
+
+query Login($username: String!, $password: String!) {
+ login(username: $username, password: $password) {
+    message {
+      isError
+      description
+    }
+    isLoggedIn
+    userInfo {
+      _id
+      username
+      email
+      firstName
+      lastName
+      hashedPassword
+      profileImage
+    }
+  }
+}
+
+query GetAllPosts($currentLength: Int!, $user: UserAuthInput!) {
+  getAllPosts(currentLength: $currentLength, User: $user) {
+    message {
+      isError
+      description
+    }
+    list {
+      _id
+      categories
+      title
+      shortText
+      fullText
+      images
+      videos
+      date
+      owner {
+        username
+      }
+      href
+    }
+  }
+}
+
+mutation AddUser($user: UserInput!) {
+  addUser(User: $user) {
+    message {
+      isError
+      description
+    }
+    userInfo {
+      _id
+      username
+      email
+      firstName
+      lastName
+      hashedPassword
+      profileImage
+    }
+  }
+}
