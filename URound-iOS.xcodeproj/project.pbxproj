@@ -22,12 +22,12 @@
 		FC1B737D2807189800A4C6C9 /* Queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = FC1B737C2807189800A4C6C9 /* Queries.graphql */; };
 		FC1B73842807264300A4C6C9 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B73832807264300A4C6C9 /* Apollo.swift */; };
 		FC1B7387280832C000A4C6C9 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1B7386280832C000A4C6C9 /* NetworkReachability.swift */; };
+		FC22EB262848D0CF00E46DAD /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = FC22EB252848D0CF00E46DAD /* schema.json */; };
+		FC22EB282848D0F200E46DAD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC22EB272848D0F200E46DAD /* API.swift */; };
 		FC2A714A2809AE3200F7BF54 /* UserFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2A71492809AE3200F7BF54 /* UserFetching.swift */; };
 		FC2A714F2809AED800F7BF54 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2A714E2809AED800F7BF54 /* UserData.swift */; };
-		FC3A3F49282264A700169525 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = FC3A3F48282264A700169525 /* schema.json */; };
 		FC3A3F4D282266BA00169525 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3A3F4C282266BA00169525 /* ProfileView.swift */; };
 		FC3A3F4F28227E2200169525 /* QueryExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3A3F4E28227E2100169525 /* QueryExecutor.swift */; };
-		FC3A3F512822A63500169525 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3A3F502822A63500169525 /* API.swift */; };
 		FC3A3F5328255BF200169525 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3A3F5228255BF200169525 /* AppState.swift */; };
 		FC3A3F562825612F00169525 /* ErrorBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3A3F552825612F00169525 /* ErrorBannerModel.swift */; };
 		FC3A3F582828FE9400169525 /* LoaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3A3F572828FE9400169525 /* LoaderModel.swift */; };
@@ -46,6 +46,7 @@
 		FC8E6640283F839300E2D980 /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8E663F283F839300E2D980 /* URLImageView.swift */; };
 		FCB97F74283BE08200C3B9C1 /* PostsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB97F73283BE08200C3B9C1 /* PostsData.swift */; };
 		FCB97F76283BEE1100C3B9C1 /* Splash_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB97F75283BEE1100C3B9C1 /* Splash_Screen.swift */; };
+		FCD385422848965100D330E7 /* PostTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD385412848965100D330E7 /* PostTypes.swift */; };
 		FCFDEE83283257AA0084EEF3 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFDEE82283257AA0084EEF3 /* InputView.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,12 +85,12 @@
 		FC1B737C2807189800A4C6C9 /* Queries.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
 		FC1B73832807264300A4C6C9 /* Apollo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
 		FC1B7386280832C000A4C6C9 /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
+		FC22EB252848D0CF00E46DAD /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		FC22EB272848D0F200E46DAD /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		FC2A71492809AE3200F7BF54 /* UserFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFetching.swift; sourceTree = "<group>"; };
 		FC2A714E2809AED800F7BF54 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		FC3A3F48282264A700169525 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		FC3A3F4C282266BA00169525 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		FC3A3F4E28227E2100169525 /* QueryExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryExecutor.swift; sourceTree = "<group>"; };
-		FC3A3F502822A63500169525 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		FC3A3F5228255BF200169525 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		FC3A3F552825612F00169525 /* ErrorBannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorBannerModel.swift; sourceTree = "<group>"; };
 		FC3A3F572828FE9400169525 /* LoaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderModel.swift; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 		FCB97F73283BE08200C3B9C1 /* PostsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsData.swift; sourceTree = "<group>"; };
 		FCB97F75283BEE1100C3B9C1 /* Splash_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash_Screen.swift; sourceTree = "<group>"; };
 		FCB97F77283CAB9800C3B9C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FCD385412848965100D330E7 /* PostTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTypes.swift; sourceTree = "<group>"; };
 		FCFDEE82283257AA0084EEF3 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,9 +204,10 @@
 		FC1B734A2807166300A4C6C9 /* URound-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				FC22EB252848D0CF00E46DAD /* schema.json */,
+				FCD385402848964100D330E7 /* Types */,
 				FC16D5672843E3F800273AF8 /* Extra_Pages */,
 				FCB97F77283CAB9800C3B9C1 /* Info.plist */,
-				FC3A3F48282264A700169525 /* schema.json */,
 				FC2A71502809AEDC00F7BF54 /* InAppData */,
 				FC2A714B2809AEAF00F7BF54 /* Pages */,
 				FC2A71482809AE2000F7BF54 /* Examples */,
@@ -248,7 +251,7 @@
 		FC1B737A280717BB00A4C6C9 /* GraphQL */ = {
 			isa = PBXGroup;
 			children = (
-				FC3A3F502822A63500169525 /* API.swift */,
+				FC22EB272848D0F200E46DAD /* API.swift */,
 				FC1B737C2807189800A4C6C9 /* Queries.graphql */,
 				FC1B73832807264300A4C6C9 /* Apollo.swift */,
 			);
@@ -312,6 +315,14 @@
 				FC5AB32B2811A9860092565E /* LogReg.swift */,
 			);
 			path = LoginAndRegistration;
+			sourceTree = "<group>";
+		};
+		FCD385402848964100D330E7 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				FCD385412848965100D330E7 /* PostTypes.swift */,
+			);
+			path = Types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,7 +438,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC3A3F49282264A700169525 /* schema.json in Resources */,
+				FC22EB262848D0CF00E46DAD /* schema.json in Resources */,
 				FC1B737D2807189800A4C6C9 /* Queries.graphql in Resources */,
 				FC1B73532807166300A4C6C9 /* Preview Assets.xcassets in Resources */,
 				FC1B73502807166300A4C6C9 /* Assets.xcassets in Resources */,
@@ -453,7 +464,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		FC1B737E2807192B00A4C6C9 /* Apollo */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -481,6 +492,7 @@
 				FC7F5C822847507400839AEC /* PostModel.swift in Sources */,
 				FC8E6640283F839300E2D980 /* URLImageView.swift in Sources */,
 				FC02770528352FC00032105D /* UserAuthInputModel.swift in Sources */,
+				FCD385422848965100D330E7 /* PostTypes.swift in Sources */,
 				FC5AB326280D6EF40092565E /* ErrorMessage.swift in Sources */,
 				FC3A3F5328255BF200169525 /* AppState.swift in Sources */,
 				FC3A3F562825612F00169525 /* ErrorBannerModel.swift in Sources */,
@@ -502,10 +514,10 @@
 				FC3A3F582828FE9400169525 /* LoaderModel.swift in Sources */,
 				FC1B73842807264300A4C6C9 /* Apollo.swift in Sources */,
 				FCB97F74283BE08200C3B9C1 /* PostsData.swift in Sources */,
-				FC3A3F512822A63500169525 /* API.swift in Sources */,
 				FC16D56B2844B00E00273AF8 /* FullPostView.swift in Sources */,
 				FC8E663E283F7D7000E2D980 /* ShortPostView.swift in Sources */,
 				FC7F5C8028473D3900839AEC /* PostView.swift in Sources */,
+				FC22EB282848D0F200E46DAD /* API.swift in Sources */,
 				FC1B734C2807166300A4C6C9 /* URound_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

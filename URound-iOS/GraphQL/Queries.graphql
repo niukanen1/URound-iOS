@@ -29,6 +29,29 @@ query Login($username: String!, $password: String!) {
   }
 }
 
+query SearchPosts($text: String!, $user: UserAuthInput!) {
+  searchPost(text: $text, User: $user) {
+    message {
+      isError
+      description
+    }
+    list {
+      _id
+      categories
+      title
+      shortText
+      fullText
+      images
+      videos
+      date
+      owner {
+        username
+      }
+      href
+    }
+  }
+}
+
 query GetAllPosts($currentLength: Int!, $user: UserAuthInput!) {
   getAllPosts(currentLength: $currentLength, User: $user) {
     message {

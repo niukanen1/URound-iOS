@@ -48,16 +48,19 @@ struct URLImageView: View {
             ZStack {
                 Color.gray
                 ProgressView()
-                    .frame(height: 200)
+                    
             }
+            .frame(height: 200)
             .onAppear {
-                print("NEED AGAIN")
                 if postData.image == nil {
                     loadImage(urlString: url)
                 }
             }
         } else {
-            Image(uiImage: postData.image ?? UIImage() )
+            Image(uiImage: postData.image ?? UIImage())
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity)
         }
     }
     
@@ -67,7 +70,6 @@ struct URLImageView: View {
 
         
         if let cacheImage = self.imageCache.get(Value: urlString) {
-            print("cache")
             DispatchQueue.main.async {
 //                withAnimation {
                     self.postData.image = cacheImage;
@@ -81,7 +83,6 @@ struct URLImageView: View {
             guard let data = data else { return }
             guard let image = UIImage(data: data) else { return };
             self.imageCache.set(Value: urlString, image: image);
-            print("fetch")
             DispatchQueue.main.async {
 //                withAnimation {
                     self.postData.image = image;
@@ -95,6 +96,6 @@ struct URLImageView: View {
 
 struct URLImageView_Previews: PreviewProvider {
     static var previews: some View {
-        URLImageView(url: "asdasd")
+        URLImageView(url: "https://s.err.ee/photo/crop/2022/05/29/1493698h1024t4.png")
     }
 }

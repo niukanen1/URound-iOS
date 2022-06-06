@@ -15,26 +15,43 @@ struct FullPostView: View {
         }
         return ""
     }
+    var fullText: String {
+        if let text = post.fullText {
+            return text
+        }
+        return ""
+    }
+    var date: String {
+        if let date = post.setDate() {
+            return date
+        }
+        return ""
+    }
     @State var imagesURLs: [String] = [];
     var body: some View {
         ScrollView {
-            //            Text(Title)
-            //                .font(.title)
-            VStack {
-                Text("Length is \(imagesURLs.count)")
                 ForEach(imagesURLs, id: \.self) { url in
                     URLImageView(url: url)
+                        .ignoresSafeArea(.all)
                 }
-            }
+                VStack(alignment: .leading) {
+                    
+                    Text(Title)
+                        .font(.largeTitle)
+                    HStack {
+                        Spacer()
+                        Text(date)
+                            .font(.footnote)
+                    }
+                    .padding(.top, -20)
+                    Text(fullText)
+                }.padding(.horizontal)
             
-            //            if let fullText = post.fullText {
-            //                Text(fullText)
-            //            }
-            
-        }.padding(.horizontal)
-            .onAppear {
-                getMultipleImages()
-            }
+        }
+        .frame(width: UIScreen.main.bounds.width)
+        .onAppear {
+            getMultipleImages()
+        }
     }
     
     func getMultipleImages() {

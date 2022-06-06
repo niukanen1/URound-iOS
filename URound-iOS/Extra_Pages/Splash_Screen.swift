@@ -52,8 +52,8 @@ struct Splash_Screen: View {
         }
     }
     func autoLoginUser() {
-        guard let username = userData.getFromKeychain()?.username else { return }
-        guard let password = userData.getFromKeychain()?.password else { return }
+        guard let username = userData.getFromKeychain()?.username else { EndSplashScreen(); return }
+        guard let password = userData.getFromKeychain()?.password else { EndSplashScreen(); return }
         print("\(username) \(password)")
         if username != "none" && password != "none" {
             Network.shared.apollo.fetch(query: LoginQuery(username: username, password: password)) { result in
@@ -79,8 +79,6 @@ struct Splash_Screen: View {
                 }
             }
         }
-        
-        
         print("Splash all false")
     }
 }
